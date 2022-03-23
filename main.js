@@ -40,7 +40,11 @@ function my_keydown(e)
 {
 	keyPressed = e.keyCode;
 	console.log(keyPressed);
-	
+	if((ball_x == hole_x)&&(ball_y==hole_y)){
+		canvas.remove(ball_object);
+		document.getElementById("hd3").innerHTML = "You Have Hit The Goal";
+		document.getElementById("myCanvas").style.borderColor="Red";
+	}
 		if(keyPressed == '38')
 		{
 			up();
@@ -104,9 +108,5 @@ function my_keydown(e)
 			new_image();
 		}
 	}
-	if((ball_x == hole_x)&&(ball_y==hole_y)){
-		canvas.remove(ball_object);
-		document.getElementById("hd3").innerHTML = "You Have Hit The Goal";
-		document.getElementById("myCanvas").style.borderColor="Red";
-	}
 }
+
