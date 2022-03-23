@@ -68,7 +68,7 @@ function my_keydown(e)
 			console.log("Block Image Height = "+block_image_height);
 			console.log("Up Key Pressed x ="+ball_x+",y = "+ball_y);
 			canvas.remove(ball_object);
-			
+			new_image();
 		}
 	}
 	function down()
@@ -78,7 +78,7 @@ function my_keydown(e)
 			console.log("Block Image Height = "+block_image_height);
 			console.log("Down Key Pressed x ="+ball_x+",y = "+ball_y);
 			canvas.remove(ball_object);
-			
+			new_image();
 		 }
 	}
 	function left()
@@ -89,7 +89,7 @@ function my_keydown(e)
 			console.log("Block Image Width = "+block_image_width);
 			console.log("Left Key Pressed x ="+ball_x+",y = "+ball_y);
 			canvas.remove(ball_object);
-			
+			new_image();
 		}
 	}
 
@@ -101,7 +101,7 @@ function my_keydown(e)
 			console.log("Block Image Width = "+block_image_width);
 			console.log("Right Key Pressed x ="+ball_x+",y = "+ball_y);
 			canvas.remove(ball_object);
-			
+			new_image();
 		}
 	}
 	if((ball_x == hole_x)&&(ball_y==hole_y)){
