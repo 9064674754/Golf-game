@@ -42,7 +42,6 @@ function my_keydown(e)
 	console.log(keyPressed);
 	if((ball_x == hole_x)&&(ball_y==hole_y)){
 		canvas.remove(ball_object);
-		new_image();
 		document.getElementById("hd3").innerHTML = "You Have Hit The Goal";
 		document.getElementById("myCanvas").style.borderColor="Red";
 	}
