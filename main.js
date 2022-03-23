@@ -42,25 +42,26 @@ function my_keydown(e)
 	console.log(keyPressed);
 	if((ball_x == hole_x)&&(ball_y==hole_y)){
 		canvas.remove(ball_object);
+		new_image();
 		document.getElementById("hd3").innerHTML = "You Have Hit The Goal";
 		document.getElementById("myCanvas").style.borderColor="Red";
 	}
-		if(keyPressed == '38')
+		else if(keyPressed == '38')
 		{
 			up();
 			console.log("up");
 		}
-		if(keyPressed == '40')
+		else if(keyPressed == '40')
 		{
 			down();
 			console.log("down");
 		}
-		if(keyPressed == '37')
+		else if(keyPressed == '37')
 		{
 			left();
 			console.log("left");
 		}
-		if(keyPressed == '39')
+		else if(keyPressed == '39')
 		{
 			right();
 			console.log("right");
